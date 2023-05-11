@@ -1,13 +1,108 @@
-body {
+:root {
+  --bg-color: rgba(254, 237, 185, 0.3);
+  --btn-color: bisque;
+  --small-font-size: 0.8rem;
+  --medium-font-size: 1rem;
+  --large-font-size: 1.5rem;
+  --thin-weight: 400;
+  --normal-weight: 500;
+  --bold-weight: 700;
+  --border-radius: 0.25rem;
+  --letter-spacing: 0.1rem;
+  --main-color: bisque;
+}
+/* normalize css starts here */
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* normalize css ends here */
+
+html {
+  font-family: poppins, sans-serif;
+  color: #222;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  width: 350px;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: var(--large-font-size);
+  font-weight: var(--bold-weight);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: var(--small-font-size);
+  font-weight: var(--thin-weight);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#filename {
+  font-size: var(--small-font-size);
+  font-weight: var(--normal-weight);
+  text-align: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  width: 280px;
+  height: 40px;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--btn-color);
+  font-size: var(--medium-font-size);
+  font-weight: var(--bold-weight);
+  letter-spacing: var(--letter-spacing);
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+#indicator-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.step {
+  width: 85px;
+  height: 5px;
+  border-radius: 40px;
+  background-color: lightgray;
+}
+.step1 {
+  background-color: var(--main-color);
+}
+
+#drop-area {
+  width: 300px;
+  border: 2px dashed gray;
+  border-radius: 6px;
+  text-align: center;
+  padding: 2rem 2rem;
+  gap: 0.5rem;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }

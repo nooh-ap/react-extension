@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import DragAndDrop from "./DragAndDrop";
+
+
 
 function App() {
+  const handleClick = () => {
+    alert("Hello World");
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DragAndDrop file={"file"} />
+      <div id="btn-container">
+        <button onClick={handleClick} className="btn continue">Let's Go</button>
+      </div>
+      <div id="indicator-container">
+        <div className="step step1"></div>
+        <div className="step step2"></div>
+        <div className="step step3"></div>
+      </div>
     </div>
   );
 }
