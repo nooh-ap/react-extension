@@ -1,23 +1,14 @@
 import "./App.css";
-import DragAndDrop from "./DragAndDrop";
+import UploadResume from "./Pages/UploadResume_Flow/UploadResume";
+import ValidateData from "./Pages/ValidateData_Flow/ValidateData";
 
 
 
 function App() {
-  const handleClick = () => {
-    alert("Hello World");
-  };
   return (
     <div className="App">
-      <DragAndDrop file={"file"} />
-      <div id="btn-container">
-        <button onClick={handleClick} className="btn continue">Let's Go</button>
-      </div>
-      <div id="indicator-container">
-        <div className="step step1"></div>
-        <div className="step step2"></div>
-        <div className="step step3"></div>
-      </div>
+      {/* <UploadResume /> */}
+      <ValidateData />
     </div>
   );
 }

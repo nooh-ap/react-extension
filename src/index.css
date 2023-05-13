@@ -10,6 +10,13 @@
   --border-radius: 0.25rem;
   --letter-spacing: 0.1rem;
   --main-color: bisque;
+
+  /* From Figma */
+  --containr-bg-color: rgba(217, 217, 217, 1);
+  --text-header-color: rgba(94, 94, 94, 1);
+  --step-indicator-color: rgba(94, 94, 94, 1);
+  --text-subtitle-color: rgba(170, 170, 170, 1);
+  --container-bg-midWhite: rgba(255, 255, 255, 0.5);
 }
 /* normalize css starts here */
 *,
@@ -32,11 +39,21 @@ body {
   margin-bottom: 0.75rem;
 }
 
+.btn {
+  background-color: var(--text-subtitle-color);
+  color: white;
+}
+
 h1 {
   font-size: var(--large-font-size);
   font-weight: var(--bold-weight);
   text-align: center;
   margin-bottom: 0.5rem;
+  color: var(--text-header-color);
+}
+
+h3 {
+  color: var(--text-header-color);
 }
 
 p {
@@ -44,12 +61,7 @@ p {
   font-weight: var(--thin-weight);
   text-align: center;
   margin-bottom: 1rem;
-}
-
-#filename {
-  font-size: var(--small-font-size);
-  font-weight: var(--normal-weight);
-  text-align: center;
+  color: var(--text-subtitle-color);
 }
 
 #content {
@@ -57,52 +69,5 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#btn-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  width: 280px;
-  height: 40px;
-  border: none;
-  border-radius: var(--border-radius);
-  background-color: var(--btn-color);
-  font-size: var(--medium-font-size);
-  font-weight: var(--bold-weight);
-  letter-spacing: var(--letter-spacing);
-  cursor: pointer;
-  margin: 0 0.5rem;
-}
-
-#indicator-container {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
-
-.step {
-  width: 85px;
-  height: 5px;
-  border-radius: 40px;
-  background-color: lightgray;
-}
-.step1 {
-  background-color: var(--main-color);
-}
-
-#drop-area {
-  width: 300px;
-  border: 2px dashed gray;
-  border-radius: 6px;
-  text-align: center;
-  padding: 2rem 2rem;
-  gap: 0.5rem;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  background-color: var(--containr-bg-color);
 }

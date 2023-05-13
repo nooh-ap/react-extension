@@ -17,8 +17,6 @@ const DragAndDrop = () => {
   return (
     <div>
       <div id="content">
-        <h1>Upload Your Resume</h1>
-        <p>We'll take care of the rest 💯</p>
         <div id="drop-area" onDrop={handleDrop} onDragOver={handleDragOver}>
           <i
             className={
