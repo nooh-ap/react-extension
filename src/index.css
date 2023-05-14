@@ -17,6 +17,11 @@
   --step-indicator-color: rgba(94, 94, 94, 1);
   --text-subtitle-color: rgba(170, 170, 170, 1);
   --container-bg-midWhite: rgba(255, 255, 255, 0.5);
+  --form-item-pill-bg: rgba(196, 196, 196, 0.38);
+  --dropdown-container-bg: linear-gradient(180deg, rgba(123, 123, 123, 0.7695) 0%, rgba(123, 123, 123, 0.95) 34.24%);
+  --dropdown-pill-bg: rgba(255, 255, 255, 0.84);
+  --dropdown-piil-text-color:  #A4A4A4;
+
 }
 /* normalize css starts here */
 *,
