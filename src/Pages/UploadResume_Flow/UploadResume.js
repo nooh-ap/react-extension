@@ -1,7 +1,7 @@
 import React from "react";
 import DragAndDrop from "./DragAndDrop";
 import StepsIndicator from "../../Components/Steps-Indicator";
-import Button from "../../Components/Button";
+import Button from "../../Components/NextPage_Button";
 import "./UploadResume.css";
 
 const UploadResume = () => {
